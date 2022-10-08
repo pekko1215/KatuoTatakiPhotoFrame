@@ -1,0 +1,83 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+#view, #viewLoader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+#viewLoader {
+    z-index: 99;
+    background-color: black;
+}
+
+#video {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#misosoupArea {
+    width: 50%;
+    flex: 1;
+}
+
+#misosoupArea svg { 
+    transform: scale(2.5);
+    transform-origin: bottom;
+}
+
+#ohitashiArea {
+    flex: 1;
+    height: 100%;
+}
+
+#ohitashiArea img {
+    height: 100%;
+}
+
+#bottom {    
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    max-height: 150px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#kobatiArea {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#kobatiArea img {
+    max-width: 50%;
+}
+
+.hidden {
+    display: none;
+}
